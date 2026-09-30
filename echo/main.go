@@ -14,6 +14,8 @@ func main() {
 		return c.HTML(http.StatusOK, "<h1>TimeWeb + Echo = ❤️</h1>")
 	})
 
+    fmt.Println('change in echo!')
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8000"
