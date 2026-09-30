@@ -4,6 +4,7 @@ const app = express();
 const port = Number(process.env.PORT ?? 3000);
 
 app.get("/", (_req, res) => {
+  console.log('test new change');
   res.status(200).send("Timeweb Cloud + Bun Express");
 });
 
